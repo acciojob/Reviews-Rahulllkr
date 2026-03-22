@@ -77,7 +77,6 @@ const Review = () => {
           <button className="next-btn" onClick={nextReview}>
             Next
           </button>
-          <h1>this is demo text</h1>
         </div>
         <button className="random-btn" onClick={randomReview}>
           Random
