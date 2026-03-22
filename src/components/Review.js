@@ -62,27 +62,24 @@ const Review = () => {
 
   return (
     <div>
-      {/* Heading */}
       <h2 id="review-heading">Our Reviews</h2>
 
-      {/* Review container */}
       <div className="review">
         <img className="person-img" src={image} alt={name} />
         <p className="author" id={`author-${id}`}>{name}</p>
         <p className="job">{job}</p>
         <p className="info">{text}</p>
 
-        {/* Buttons */}
         <div className="button-container">
           <button className="prev-btn" onClick={prevReview}>
             Previous
           </button>
-          <button className="next-btn" onClick={nextReview}>
+          {/* <button className="next-btn" onClick={nextReview}>
             Next
-          </button>
+          </button> */}
         </div>
         <button className="random-btn" onClick={randomReview}>
-          surprise me
+          Random
         </button>
       </div>
     </div>
